@@ -17,12 +17,12 @@ setuptools>=65.5.1,<67.0.0
 hydra-core>=1.2.0
 pip-tools>=6.12.1
 einops==0.3.2
-treelib==1.6.1
-termcolor==1.1.0
+treelib
+termcolor
 packaging>=20.4
 wheel>=0.38.0
 pygments>=2.7.4
-stringcase>=1.2.0
+stringcase
 rapidfuzz
 json-tricks==3.16.1
 data-gradients~=0.3.1
@@ -40,4 +40,4 @@ onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.11/Colab
 
 # PDF / document processing
 xhtml2pdf>=0.2.11  # installe svglib automatiquement
-reportlab  # version compatible pip choisie automatiquement
+reportlab
