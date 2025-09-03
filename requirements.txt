@@ -20,7 +20,6 @@ einops==0.3.2
 treelib==1.6.1
 termcolor==1.1.0
 packaging>=20.4
-# not directly required, pinned by Snyk to avoid a vulnerability
 wheel>=0.38.0
 pygments>=2.7.4
 stringcase>=1.2.0
@@ -36,13 +35,10 @@ jedi>=0.16
 
 # ONNX stack
 onnxruntime>=1.15.0
-onnx==1.15.0  # version avec wheels pour Python 3.11
+onnx==1.15.0
 onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.11/Colab
 
-# PDF / document processing (wheels existantes)
-reportlab>=3.6.14
-xhtml2pdf>=0.2.11
-# svglib sera installé automatiquement par xhtml2pdf, version compatible
-
-# Images
-pillow>=10.2.0
+# PDF / document processing
+xhtml2pdf>=0.2.11  # installe svglib automatiquement
+# reportlab sera installé en version compatible automatiquement par pip
+reportlab
