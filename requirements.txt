@@ -12,27 +12,29 @@ setuptools>=65.5.1,<67.0.0
 torchvision>=0.10.0
 torchmetrics==0.8
 hydra-core>=1.2.0
-#onnxruntime==1.17.0
+onnxruntime>=1.15.0
 # onnx 1.16.0 introduce IR 10 which is not yet supported by onnx runtime & graphsurgeon
-#onnx==1.17.0
+onnx==1.15.0
 pillow>=10.2.0
 pip-tools>=6.12.1
 einops==0.3.2
-treelib>=1.6.1
-termcolor>=1.1.0
+treelib==1.6.1
+termcolor==1.1.0
 packaging>=20.4
 # not directly required, pinned by Snyk to avoid a vulnerability
-#wheel>=0.38.0
+wheel>=0.38.0
 # not directly required, pinned by Snyk to avoid a vulnerability
-#pygments>=2.7.4
+pygments>=2.7.4
 stringcase>=1.2.0
 rapidfuzz
 json-tricks==3.16.1
-onnxsim>=0.4.3,<1.0
+onnxsim-prebuilt>=0.4.36
 data-gradients~=0.3.1
 albumentations~=1.3
 # not directly required, pinned by Snyk to avoid a vulnerability
-#fonttools>=4.43.0
+fonttools>=4.43.0
 # not directly required, pinned by Snyk to avoid a vulnerability
-#werkzeug>=2.3.8
+werkzeug>=2.3.8
 imagesize~=1.4.1
+# fix missing dependency for IPython in Colab
+jedi>=0.16
