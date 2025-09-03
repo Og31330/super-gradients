@@ -36,7 +36,7 @@ jedi>=0.16
 # ONNX stack
 onnxruntime>=1.15.0
 onnx==1.15.0
-onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.11/Colab
+onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.10/Colab
 
 # PDF / document processing
 xhtml2pdf>=0.2.11  # installe svglib automatiquement
