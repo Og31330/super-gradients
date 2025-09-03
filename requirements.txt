@@ -40,5 +40,4 @@ onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.11/Colab
 
 # PDF / document processing
 xhtml2pdf>=0.2.11  # installe svglib automatiquement
-# reportlab sera installé en version compatible automatiquement par pip
-reportlab
+reportlab  # version compatible pip choisie automatiquement
