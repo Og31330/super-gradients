@@ -3,10 +3,10 @@ import pathlib
 
 import hydra
 import numpy as np
-import onnx
+#import onnx
 import torch
 from omegaconf import DictConfig
-from onnxsim import simplify
+#from onnxsim import simplify
 from torch.nn import Identity
 
 from super_gradients.common.abstractions.abstract_logger import get_logger
