@@ -1,27 +1,27 @@
 # Torch stack
-torch>=1.9.0
-torchvision>=0.10.0
-torchmetrics==0.8
+#torch>=1.9.0
+#torchvision>=0.10.0
+torchmetrics>=0.8
 
 # Utilities
-tqdm>=4.57.0
+#tqdm>=4.57.0
+#scipy>=1.6.1
+#matplotlib>=3.3.4
+#setuptools>=65.5.1,<67.0.0
+#wheel>=0.38.0
+#packaging>=20.4
+#pygments>=2.7.4
+#tensorboard>=2.4.1
 boto3>=1.17.15
 jsonschema>=3.2.0
 Deprecated>=1.2.11
-scipy>=1.6.1
-matplotlib>=3.3.4
 psutil>=5.8.0
-tensorboard>=2.4.1
 # pinned because of a crash in Snyk
-setuptools>=65.5.1,<67.0.0
 hydra-core>=1.2.0
 pip-tools>=6.12.1
 einops==0.3.2
 treelib
 termcolor
-packaging>=20.4
-wheel>=0.38.0
-pygments>=2.7.4
 stringcase
 rapidfuzz
 json-tricks==3.16.1
@@ -34,9 +34,9 @@ imagesize~=1.4.1
 jedi>=0.16
 
 # ONNX stack
-onnxruntime>=1.15.0
-onnx==1.15.0
-onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.10/Colab
+#onnxruntime>=1.15.0
+#onnx==1.15.0
+#onnxsim-prebuilt>=0.4.36  # précompilé pour Python 3.10/Colab
 
 # PDF / document processing
 xhtml2pdf>=0.2.11  # installe svglib automatiquement
