@@ -1569,6 +1569,7 @@ def load_pretrained_weights(model: torch.nn.Module, architecture: str, pretraine
             f"{pretrained_weights} dataset, published under the following terms: {DATASET_LICENSES[pretrained_weights]}"
         )
     url = MODEL_URLS[model_url_key]
+    print("####", url)
 
     if architecture in {Models.YOLO_NAS_S, Models.YOLO_NAS_M, Models.YOLO_NAS_L}:
         logger.info(
