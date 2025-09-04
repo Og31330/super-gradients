@@ -11,8 +11,8 @@ from typing import List, Union, Optional, Sequence, Mapping
 
 import cv2
 import numpy as np
-import onnx
-import onnxruntime
+#import onnx
+#import onnxruntime
 import torch
 from super_gradients.common.abstractions.abstract_logger import get_logger
 from super_gradients.common.decorators.factory_decorator import resolve_param
