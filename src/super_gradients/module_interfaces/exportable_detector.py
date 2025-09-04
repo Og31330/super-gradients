@@ -6,13 +6,13 @@ from typing import Any
 from typing import Union, Optional, List, Tuple
 
 import numpy as np
-import onnx
-import onnxsim
+#import onnx
+#import onnxsim
 import torch
 from super_gradients.common.abstractions.abstract_logger import get_logger
 from super_gradients.conversion import ExportTargetBackend, ExportQuantizationMode, DetectionOutputFormatMode
 from super_gradients.conversion.conversion_utils import find_compatible_model_device_for_dtype
-from super_gradients.conversion.gs_utils import import_onnx_graphsurgeon_or_install
+#from super_gradients.conversion.gs_utils import import_onnx_graphsurgeon_or_install
 from super_gradients.import_utils import import_pytorch_quantization_or_install
 from super_gradients.module_interfaces.exceptions import ModelHasNoPreprocessingParamsException
 from super_gradients.module_interfaces.supports_input_shape_check import SupportsInputShapeCheck
