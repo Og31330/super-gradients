@@ -6,9 +6,9 @@ from omegaconf import ListConfig, DictConfig, OmegaConf
 from super_gradients.common.factories.base_factory import BaseFactory
 from super_gradients.common.factories.list_factory import ListFactory
 from super_gradients.common.registry.registry import TRANSFORMS
-from super_gradients.common.registry.albumentation import ALBUMENTATIONS_TRANSFORMS, ALBUMENTATIONS_COMP_TRANSFORMS
-from super_gradients.common.registry.albumentation import imported_albumentations_failure
-from super_gradients.training.transforms.pipeline_adaptors import AlbumentationsAdaptor
+#from super_gradients.common.registry.albumentation import ALBUMENTATIONS_TRANSFORMS, ALBUMENTATIONS_COMP_TRANSFORMS
+#from super_gradients.common.registry.albumentation import imported_albumentations_failure
+#from super_gradients.training.transforms.pipeline_adaptors import AlbumentationsAdaptor
 
 
 class TransformsFactory(BaseFactory):
