@@ -30,7 +30,7 @@ if imported_albumentations_failure is None:
                     ALBUMENTATIONS_COMP_TRANSFORMS[cls.__name__] = cls
             except TypeError:
                 pass
-    }
+
     ALBUMENTATIONS_TRANSFORMS.update(ALBUMENTATIONS_COMP_TRANSFORMS)
 
 else:
