@@ -22,10 +22,14 @@ if imported_albumentations_failure is None:
         {name: cls for name, cls in inspect.getmembers(importlib.import_module("albumentations.pytorch"), inspect.isclass) if issubclass(cls, BasicTransform)}
     )
 
-    ALBUMENTATIONS_COMP_TRANSFORMS = {
-        name: cls
-        for name, cls in inspect.getmembers(importlib.import_module("albumentations.core.composition"), inspect.isclass)
-        if issubclass(cls, BaseCompose)
+    ALBUMENTATIONS_COMP_TRANSFORMS = {}
+    for cls in globals().values():
+        if isinstance(cls, type):
+            try:
+                if issubclass(cls, BaseCompose):
+                    ALBUMENTATIONS_COMP_TRANSFORMS[cls.__name__] = cls
+            except TypeError:
+                pass
     }
     ALBUMENTATIONS_TRANSFORMS.update(ALBUMENTATIONS_COMP_TRANSFORMS)
 
